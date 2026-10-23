@@ -1,0 +1,17 @@
+package com.colorref.strinova;
+
+import com.mojang.logging.LogUtils;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.common.Mod;
+import org.slf4j.Logger;
+
+@Mod(StrinovaMod.MODID)
+public class StrinovaMod {
+    public static final String MODID = "strinova";
+    public static final Logger LOGGER = LogUtils.getLogger();
+
+    public StrinovaMod(IEventBus modEventBus, ModContainer modContainer) {
+        LOGGER.info("Strinova mod initialized");
+    }
+}
